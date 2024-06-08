@@ -30,6 +30,11 @@ import Stateless from "./components/14-state/stateless";
 import Counter from "./components/15-counter/counter";
 import Employes from "./components/02-jsx/my-jsx/my-jsx2";
 import Fragment from "./components/02-jsx/my-jsx/3-fragment"
+import Mystate from "./my-works/my-state";
+import Counter1 from "./components/15-counter/counter1";
+import MyCounter from "./my-works/my-counter";
+import MyProducts from "./my-works/my-products";
+import MyProfileCard from "./my-works/my-profile-card";
 
 const App = () => {
 	return (
@@ -75,12 +80,36 @@ const App = () => {
  <Counter/>
  helloReactPractise
 <Employes />
-
-
-
-      */}
 <Fragment/>
+<State/>
+<Mystate/>
+<Counter1/>
+<Counter/>
+<MyCounter/>
+<Products/>
 
+<MyProducts/>
+<ProfileCard/>
+<ProfileCard
+				avatar="/img/profile.jpg"
+				name="Susan Doe"
+				location="Brussels, Belgium"
+				shot="14"
+				followers="121"
+				following="25"
+			/>
+      */}
+{/* //image,Name,Adres,Shot,Followers,Following */}
+
+<MyProfileCard
+image="/img/image5.jpg"
+Name="Süleyman Timur"
+Adres="İstanbul, Turkey"
+Shot="100"
+Followers="200"
+Following="500"
+
+/>
 
 
 

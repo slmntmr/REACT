@@ -1,0 +1,65 @@
+.MyProfileCard {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+}
+
+.header img {
+  width: 80%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats li {
+  text-align: center;
+}
+
+.stats h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.stats p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: gray;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center; /* İsimi ortala */
+}
+
+.address {
+  font-size: 14px;
+  color: #555;
+  text-align: center; /* Adresi ortala */
+}
