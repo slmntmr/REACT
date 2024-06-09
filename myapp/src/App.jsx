@@ -35,6 +35,7 @@ import Counter1 from "./components/15-counter/counter1";
 import MyCounter from "./my-works/my-counter";
 import MyProducts from "./my-works/my-products";
 import MyProfileCard from "./my-works/my-profile-card";
+import User from "./components/16-birthday/user";
 
 const App = () => {
 	return (
@@ -98,10 +99,7 @@ const App = () => {
 				followers="121"
 				following="25"
 			/>
-      */}
-{/* //image,Name,Adres,Shot,Followers,Following */}
-
-<MyProfileCard
+      <MyProfileCard
 image="/img/image5.jpg"
 Name="Süleyman Timur"
 Adres="İstanbul, Turkey"
@@ -110,6 +108,13 @@ Followers="200"
 Following="500"
 
 />
+      */}
+< User/>
+
+
+
+
+
 
 
 
