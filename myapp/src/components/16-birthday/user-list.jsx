@@ -10,9 +10,11 @@ const UserList = () => {
 	const newUserList = data.map((item) => ({ ...item, isCelebrated: false }));
 
 	const [users, setUsers] = useState(newUserList);
+	//console.log(users)
 
 	const celebrateAllUsers = () => {
 		const arr = users.map((item) => ({ ...item, isCelebrated: true }));
+
 		setUsers(arr);
 	};
 

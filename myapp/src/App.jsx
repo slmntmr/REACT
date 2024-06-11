@@ -36,6 +36,10 @@ import MyCounter from "./my-works/my-counter";
 import MyProducts from "./my-works/my-products";
 import MyProfileCard from "./my-works/my-profile-card";
 import User from "./components/16-birthday/user";
+import UserList from "./components/16-birthday/user-list";
+import Welcome from "./components/05-props/welcome";
+import Form6 from "./my-works/TEST";
+
 
 const App = () => {
 	return (
@@ -106,12 +110,14 @@ Adres="İstanbul, Turkey"
 Shot="100"
 Followers="200"
 Following="500"
-
-/>
-      */}
+< UserList/>
 < User/>
 
 
+      */}
+
+
+<Form6/>
 
 
 
