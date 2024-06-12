@@ -38,7 +38,8 @@ import MyProfileCard from "./my-works/my-profile-card";
 import User from "./components/16-birthday/user";
 import UserList from "./components/16-birthday/user-list";
 import Welcome from "./components/05-props/welcome";
-import Form6 from "./my-works/TEST";
+import Form6 from "./my-works/test";
+import Test from "./my-works/test";
 
 
 const App = () => {
@@ -112,11 +113,13 @@ Followers="200"
 Following="500"
 < UserList/>
 < User/>
+<Test/>
 
 
       */}
 
 
+export default Form6;
 <Form6/>
 
 

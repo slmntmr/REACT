@@ -3,7 +3,7 @@ import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import * as Yup from "yup";
 
-const Form6 = () => {
+const Test = () => {
     const initialValues = {
         firstName: "",
         lastName: "",
@@ -108,4 +108,4 @@ const Form6 = () => {
     );
 };
 
-export default Form6;
+export default Test;
