@@ -3,23 +3,11 @@ import "./profile-card.scss";
 
 const ProfileCard = (props) => {
 	const { avatar, name, location, shot, followers, following } = props;
-
-/* 	console.log("Avatar:", avatar);
-	console.log("Name:", name);
-	console.log("Location:", location);
-	console.log("Shot:", shot);
-	console.log("Followers:", followers);
-	console.log("Following:", following); */
-
 	return (
-	<div className="profile-card">
-
-
+		<div className="profile-card">
 			<div className="header">
 				<img src={avatar} alt="" />
 			</div>
-
-
 			<div className="content">
 				<img className="avatar" src={avatar} alt={name} />
 

@@ -1,9 +1,19 @@
 import { useFormik } from "formik";
-import React from "react";
-import { Button, Card, FloatingLabel, Form, Spinner } from "react-bootstrap";
+import React, { useState } from "react";
+import {
+	Alert,
+	Button,
+	Card,
+	FloatingLabel,
+	Form,
+	Spinner,
+} from "react-bootstrap";
 import * as Yup from "yup";
+import { createProduct } from "./api";
 
-const NewProductForm = () => {
+const NewProductForm = ({ setOperation }) => {
+	const [error, setError] = useState(null);
+
 	const initialValues = {
 		title: "",
 		price: "",
@@ -20,8 +30,15 @@ const NewProductForm = () => {
 		category: Yup.string().max(70, "Too long").required("Required"),
 	});
 
-	const onSubmit = (values) => {
-		console.log(values);
+	const onSubmit = async (values) => {
+		try {
+			await createProduct(values);
+			formik.resetForm();
+            setOperation("list")
+		} catch (err) {
+			console.log(err);
+			setError(err);
+		}
 	};
 
 	const formik = useFormik({
@@ -38,6 +55,10 @@ const NewProductForm = () => {
 	return (
 		<Card>
 			<Card.Body>
+				{error?.message ? (
+					<Alert variant="danger">{error?.message}</Alert>
+				) : null}
+
 				<Form noValidate onSubmit={formik.handleSubmit}>
 					<FloatingLabel
 						controlId="title"
@@ -98,6 +119,14 @@ const NewProductForm = () => {
 						className="mb-3"
 						{...formik.getFieldProps("discounted")}
 					/>
+
+					<Button
+						variant="secondary"
+						className="me-2"
+						onClick={() => setOperation("list")}
+					>
+						Cancel
+					</Button>
 
 					<Button
 						type="submit"

@@ -6,12 +6,9 @@ const Greetings = () => {
     <div>
         <h1>Props</h1>
 
-        <Welcome firstName="John" lastName="Doe" textColor="yellow"/>
+        <Welcome firstName="John" lastName="Doe"/>
         <Welcome firstName="Kevin" lastName="White" textColor="blue"/>
         <Welcome firstName="Joseph" lastName="Yellow" textColor="orange"/>
-        <Welcome firstName="adem" lastName="brave" textColor="red" age="25" />
-        <Welcome>Lorem ipsum dolor sit amet.
-        </Welcome>
     </div>
   )
 }

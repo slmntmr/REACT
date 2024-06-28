@@ -1,0 +1,12 @@
+.dark,
+.dark *
+{
+    background-color: rgb(19, 19, 19) !important;
+    color: rgb(239, 239, 239) !important;
+}
+
+.dark button,
+.dark button *
+{
+    background-color: rgb(53, 53, 53) !important;
+}

@@ -2,6 +2,8 @@ import React from "react";
 import { Button, Container } from "react-bootstrap";
 
 const Stateless = () => {
+	// Bu component te dark/light mode calismaz. Cunku classes degiskenin degeri degisse bile, component yenilenmedigi icin, bu degisiklik alt tarafa yansimaz.
+	
 	let classes = "bg-dark text-light";
 
 

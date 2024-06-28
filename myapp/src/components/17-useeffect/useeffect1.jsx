@@ -12,10 +12,10 @@ const UseEffect1 = () => {
     USE EFFECT asenkrondur, her zaman JSX render olduktan sonra calisir.
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     */
-
 	useEffect(() => {
 		console.log("MOUNTING: Buradaki kodlar sadece render da calisir");
 	}, []);
+	
 
 	useEffect(() => {
 		console.log("UPDATING: Buradaki kodlar render ve re-render da calisir");
@@ -27,6 +27,7 @@ const UseEffect1 = () => {
 		);
 	}, [error]);
 
+	
 	console.log(message);
 
 	return (
